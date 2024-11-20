@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <input class="pristine" type="checkbox" name="toggle" value="on">
+</body>
+
+<script>
+    // for removing the `pristine` class that prevents CSS animation on load
+    document.addEventListener("click", e => {
+        let tar = e.target;
+        if (tar.name == "toggle")
+            tar.removeAttribute("class");
+    });
+</script>
+
+</html>
